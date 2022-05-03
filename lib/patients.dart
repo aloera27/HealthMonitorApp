@@ -20,7 +20,7 @@ class _PatientSelectionState extends State<PatientSelection> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.lightBlue,
 
       body: Container(
         //backgroundColor: Colors.white,
@@ -33,6 +33,7 @@ class _PatientSelectionState extends State<PatientSelection> {
           
                  ElevatedButton(
                    style: ElevatedButton.styleFrom(
+                    primary: Colors.black, 
                    minimumSize: const Size(200, 50),
                    //maximumSize: const Size(200, 50), 
                    ),
@@ -49,7 +50,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-           color: Colors.white,
+           color: Colors.lightBlue,
           ),
 
                 
@@ -57,6 +58,7 @@ class _PatientSelectionState extends State<PatientSelection> {
 
                 ElevatedButton(
                    style: ElevatedButton.styleFrom(
+                     primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Patient 2'),
@@ -75,11 +77,12 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-           color: Colors.white,
+           color: Colors.lightBlue,
           ),
 
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Patient 3'),
@@ -97,10 +100,11 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+            color: Colors.lightBlue,
           ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Patient 4'),
@@ -119,12 +123,13 @@ Divider(
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+            color: Colors.lightBlue,
           ),
 
 
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Patient 5'),
