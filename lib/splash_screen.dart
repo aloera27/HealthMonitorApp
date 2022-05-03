@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/Weight.dart';
-import 'package:flutter_application_1/home.dart';
+//import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/selection.dart';
 import 'dart:async';
 import 'main.dart';

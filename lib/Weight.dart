@@ -1,11 +1,7 @@
-import 'package:charts_flutter/flutter.dart';
-import 'package:draw_graph/draw_graph.dart';
-import 'package:draw_graph/models/feature.dart';
+
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:intl/intl.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:intl/intl.dart';
+
 
 class GraphScreen extends StatefulWidget {
   @override
@@ -13,7 +9,7 @@ class GraphScreen extends StatefulWidget {
 }
 
 class _GraphScreenState extends State<GraphScreen> {
-  List<SalesData> _charData;
+  List<WeightData> _charData;
   @override 
   void initState(){
     _charData=getCharData();
@@ -33,39 +29,33 @@ class _GraphScreenState extends State<GraphScreen> {
 
             
               series: <ChartSeries>[
-                LineSeries<SalesData, double>(
+                LineSeries<WeightData, double>(
                 dataSource: _charData,
-                xValueMapper: (SalesData sales, _) =>sales.day,
-                yValueMapper: (SalesData sales, _)=> sales.weight)
+                xValueMapper: (WeightData patient, _) =>patient.day,
+                yValueMapper: (WeightData patient, _)=> patient.weight)
       
               ],
-            //primaryXAxis: NumericAxis(),
-              //primaryXAxis: 
-              
-            //primaryXAxis: name:'days', decimalPlaces:0), 
-
-             // primaryXAxis: NumericAxis(edgeLabelPlacement: EdgeLabelPlacement.shift),
-           //   primaryYAxis:  NumericAxis(numberFormat: BasicNumericTickFormatterSpec.fromNumberFormat(numberFormat)),
+          
               ),
           ))));
     }}
 
-    List<SalesData> getCharData(){
-      final List<SalesData> charData=[
-        SalesData(1, 135),
-        SalesData(2, 137),
-        SalesData(3, 130),
-        SalesData(4, 125),
-        SalesData(5, 130),
-        SalesData(6, 140),
+    List<WeightData> getCharData(){
+      final List<WeightData> charData=[
+        WeightData(1, 135),
+        WeightData(2, 137),
+        WeightData(3, 130),
+        WeightData(4, 125),
+        WeightData(5, 130),
+        WeightData(6, 140),
         
         
       ];
       return charData; 
     }
   
-class SalesData{
-SalesData(this.day, this.weight);
+class WeightData{
+WeightData(this.day, this.weight);
 final double day; 
 final double weight; 
 

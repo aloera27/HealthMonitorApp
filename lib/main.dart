@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Weight.dart';
-import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/patients.dart';
+
 import 'package:flutter_application_1/selection.dart';
 import 'package:flutter_application_1/splash_screen.dart';
 import 'main.dart';
@@ -83,8 +84,6 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
 
-
-
             
             Container(
               height: 50,
@@ -94,7 +93,7 @@ class _LoginDemoState extends State<LoginDemo> {
               child: TextButton(
                 onPressed: () {
                   Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => Selection()));
+                      context, MaterialPageRoute(builder: (_) => PatientSelection()));
                 },
                 child: Text(
                   'Login',

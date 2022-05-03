@@ -1,15 +1,12 @@
-import 'package:charts_flutter/flutter.dart';
+//import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Weight.dart';
-import 'package:flutter_application_1/bmi.dart';
-import 'package:flutter_application_1/heart.dart';
+
+//import 'package:flutter_application_1/heart.dart';
 import 'package:flutter_application_1/selection.dart';
-import 'package:flutter_application_1/oxygen.dart';
+//import 'package:flutter_application_1/oxygen.dart';
 
 
-import 'dart:async';
 
-import 'package:flutter_application_1/temperature.dart';
 
 
 class PatientSelection extends StatefulWidget{

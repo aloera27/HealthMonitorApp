@@ -1,5 +1,5 @@
-import 'package:draw_graph/draw_graph.dart';
-import 'package:draw_graph/models/feature.dart';
+
+
 import 'package:flutter/material.dart';
 
 import 'package:syncfusion_flutter_charts/charts.dart';
@@ -12,7 +12,7 @@ class OxygenScreen extends StatefulWidget {
 class _OxygenScreenState extends State<OxygenScreen> {
  
 
-  List<SalesData> _charData;
+  List<OxygenData> _charData;
   @override 
   void initState(){
     _charData=getCharData();
@@ -32,10 +32,10 @@ class _OxygenScreenState extends State<OxygenScreen> {
 
             
               series: <ChartSeries>[
-                LineSeries<SalesData, double>(
+                LineSeries<OxygenData, double>(
                 dataSource: _charData,
-                xValueMapper: (SalesData sales, _) =>sales.day,
-                yValueMapper: (SalesData sales, _)=> sales.oxygen)
+                xValueMapper: (OxygenData user, _) =>user.day,
+                yValueMapper: (OxygenData user, _)=> user.oxygen)
       
               ],
             
@@ -43,22 +43,22 @@ class _OxygenScreenState extends State<OxygenScreen> {
           ))));
     }}
 
-    List<SalesData> getCharData(){
-      final List<SalesData> charData=[
-        SalesData(1, 135),
-        SalesData(2, 137),
-        SalesData(3, 130),
-        SalesData(4, 125),
-        SalesData(5, 130),
-        SalesData(6, 140),
+    List<OxygenData> getCharData(){
+      final List<OxygenData> charData=[
+        OxygenData(1, 99),
+        OxygenData(2, 95),
+        OxygenData(3, 98.5),
+        OxygenData(4, 99),
+        OxygenData(5, 98),
+        OxygenData(6, 97),
         
         
       ];
       return charData; 
     }
   
-class SalesData{
-SalesData(this.day, this.oxygen);
+class OxygenData{
+OxygenData(this.day, this.oxygen);
 final double day; 
 final double oxygen; 
 

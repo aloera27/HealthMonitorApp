@@ -1,13 +1,11 @@
-import 'package:charts_flutter/flutter.dart';
+//import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Weight.dart';
 import 'package:flutter_application_1/bmi.dart';
 import 'package:flutter_application_1/heart.dart';
-import 'package:flutter_application_1/home.dart';
+//import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/oxygen.dart';
-import 'package:flutter_application_1/splash_screen.dart';
 
-import 'dart:async';
 
 import 'package:flutter_application_1/temperature.dart';
 
