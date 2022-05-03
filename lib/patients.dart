@@ -20,7 +20,10 @@ class _PatientSelectionState extends State<PatientSelection> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text("Choose Patient"),
+      ),
 
       body: Container(
         //backgroundColor: Colors.white,
@@ -50,7 +53,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-           color: Colors.lightBlue,
+           color: Colors.white,
           ),
 
                 
@@ -77,7 +80,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-           color: Colors.lightBlue,
+           color: Colors.white,
           ),
 
                 ElevatedButton(
@@ -100,7 +103,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.lightBlue,
+            color: Colors.white,
           ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -123,7 +126,7 @@ Divider(
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.lightBlue,
+            color: Colors.white,
           ),
 
 

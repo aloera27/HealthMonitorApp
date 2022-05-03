@@ -21,7 +21,10 @@ class _SelectionState extends State<Selection> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      appBar: AppBar(
+        title: Text("Choose Health Parameter"),
+      ),
+      backgroundColor: Colors.white,
       body: Container(
         alignment: Alignment.center,
        child: Column(
@@ -49,7 +52,7 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.lightBlue,
+            color: Colors.white,
           ),
 
                 
@@ -76,7 +79,7 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-           color: Colors.lightBlue,
+           color: Colors.white,
           ),
 
                 ElevatedButton(
@@ -99,7 +102,7 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.lightBlue,
+            color: Colors.white,
           ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -123,7 +126,7 @@ Divider(
             thickness: 5,
             indent: 20,
             endIndent: 0,
-          color: Colors.lightBlue,
+          color: Colors.white,
           ),
 
 
