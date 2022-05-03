@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Weight.dart';
 import 'package:flutter_application_1/bmi.dart';
 import 'package:flutter_application_1/heart.dart';
-import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/selection.dart';
 import 'package:flutter_application_1/oxygen.dart';
-import 'package:flutter_application_1/splash_screen.dart';
+
 
 import 'dart:async';
 
 import 'package:flutter_application_1/temperature.dart';
 
 
-class Selection extends StatefulWidget{
+class PatientSelection extends StatefulWidget{
 @override 
-_SelectionState createState() => _SelectionState();
+_PatientSelectionState createState() => _PatientSelectionState();
 }
-class _SelectionState extends State<Selection> {
+class _PatientSelectionState extends State<PatientSelection> {
   TextEditingController nameController = TextEditingController();
   String fullName = '';
   @override 
@@ -36,11 +36,11 @@ class _SelectionState extends State<Selection> {
                    minimumSize: const Size(200, 50),
                    //maximumSize: const Size(200, 50), 
                    ),
-                   child: Text('Temperature'),
+                   child: Text('Patient 1'),
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => TemperatureScreen()), 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
                      );},
                  )
                ,
@@ -59,11 +59,11 @@ class _SelectionState extends State<Selection> {
                    style: ElevatedButton.styleFrom(
                    minimumSize: const Size(200, 50),
                    ),
-                   child: Text('Oxygen Level'),
+                   child: Text('Patient 2'),
                    onPressed: (){
                       Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => OxygenScreen()), 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
                      );}
 
                 ,
@@ -82,11 +82,11 @@ class _SelectionState extends State<Selection> {
                   style: ElevatedButton.styleFrom(
                    minimumSize: const Size(200, 50),
                    ),
-                   child: Text('Weight'),
+                   child: Text('Patient 3'),
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => GraphScreen()), 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
                      );}
 
                 
@@ -103,18 +103,17 @@ class _SelectionState extends State<Selection> {
                   style: ElevatedButton.styleFrom(
                    minimumSize: const Size(200, 50),
                    ),
-                   child: Text('BMI'),
+                   child: Text('Patient 4'),
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => BMIScreen()), 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
                      );}
 
                 ,
 
                 ),
-  
-         //     ),
+
 Divider(
                   height: 20,
             thickness: 5,
@@ -128,11 +127,11 @@ Divider(
                 style: ElevatedButton.styleFrom(
                    minimumSize: const Size(200, 50),
                    ),
-                   child: Text('Heart Rate'),
+                   child: Text('Patient 5'),
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => HeartScreen()), 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
                      );
 
                    },
