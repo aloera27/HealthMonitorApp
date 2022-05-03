@@ -21,6 +21,7 @@ class _SelectionState extends State<Selection> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlue,
       body: Container(
         alignment: Alignment.center,
        child: Column(
@@ -31,6 +32,7 @@ class _SelectionState extends State<Selection> {
           
                  ElevatedButton(
                    style: ElevatedButton.styleFrom(
+                  primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    //maximumSize: const Size(200, 50), 
                    ),
@@ -47,7 +49,7 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+            color: Colors.lightBlue,
           ),
 
                 
@@ -55,6 +57,7 @@ class _SelectionState extends State<Selection> {
 
                 ElevatedButton(
                    style: ElevatedButton.styleFrom(
+                     primary: Colors.black, 
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Oxygen Level'),
@@ -73,11 +76,12 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+           color: Colors.lightBlue,
           ),
 
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                     primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Weight'),
@@ -95,10 +99,11 @@ class _SelectionState extends State<Selection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+            color: Colors.lightBlue,
           ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                     primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('BMI'),
@@ -118,12 +123,14 @@ Divider(
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+          color: Colors.lightBlue,
           ),
 
 
               ElevatedButton(
+                 //primary: Colors.black,
                 style: ElevatedButton.styleFrom(
+                   primary: Colors.black,
                    minimumSize: const Size(200, 50),
                    ),
                    child: Text('Heart Rate'),

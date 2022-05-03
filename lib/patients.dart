@@ -20,7 +20,10 @@ class _PatientSelectionState extends State<PatientSelection> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+
       body: Container(
+        //backgroundColor: Colors.white,
         alignment: Alignment.center,
        child: Column(
           
@@ -46,7 +49,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+           color: Colors.white,
           ),
 
                 
@@ -72,7 +75,7 @@ class _PatientSelectionState extends State<PatientSelection> {
             thickness: 5,
             indent: 20,
             endIndent: 0,
-            color: Colors.white,
+           color: Colors.white,
           ),
 
                 ElevatedButton(

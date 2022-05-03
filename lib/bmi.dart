@@ -27,6 +27,29 @@ class _BMIScreenState extends State<BMIScreen> {
           child:Container(
             child: SfCartesianChart(
 
+primaryXAxis: CategoryAxis(
+                title: AxisTitle(
+                  text: 'Day of the Month', 
+                  textStyle: TextStyle(
+                  color:Colors.black, 
+                  fontFamily: 'Roboto', 
+                  fontSize: 16,
+                )
+              ),
+              
+              ),
+primaryYAxis: CategoryAxis(
+                title: AxisTitle(
+                  text: 'BMI Percentage ', 
+                  textStyle: TextStyle(
+                  color:Colors.black, 
+                  fontFamily: 'Roboto', 
+                  fontSize: 16,
+                )
+              ),
+              
+              ),
+            
             
 
             

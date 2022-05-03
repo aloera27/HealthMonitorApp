@@ -9,7 +9,7 @@ class  HeartScreen extends StatefulWidget {
 
 class _HeartScreenState extends State<HeartScreen> {
 
-  List<SalesData> _charData;
+  List<HeartData> _charData;
   @override 
   void initState(){
     _charData=getCharData();
@@ -24,15 +24,37 @@ class _HeartScreenState extends State<HeartScreen> {
         body: Center(
           child:Container(
             child: SfCartesianChart(
+              primaryXAxis: CategoryAxis(
+                title: AxisTitle(
+                  text: 'Day of the Month', 
+                  textStyle: TextStyle(
+                  color:Colors.black, 
+                  fontFamily: 'Roboto', 
+                  fontSize: 16,
+                )
+              ),
+              
+              ),
+primaryYAxis: CategoryAxis(
+                title: AxisTitle(
+                  text: 'Beats per minute ', 
+                  textStyle: TextStyle(
+                  color:Colors.black, 
+                  fontFamily: 'Roboto', 
+                  fontSize: 16,
+                )
+              ),
+              
+              ),
 
             
 
             
               series: <ChartSeries>[
-                LineSeries<SalesData, double>(
+                LineSeries<HeartData, double>(
                 dataSource: _charData,
-                xValueMapper: (SalesData sales, _) =>sales.day,
-                yValueMapper: (SalesData sales, _)=> sales.weight)
+                xValueMapper: (HeartData patient, _) =>patient.day,
+                yValueMapper: (HeartData patient, _)=> patient.rate)
       
               ],
           
@@ -40,24 +62,24 @@ class _HeartScreenState extends State<HeartScreen> {
           ))));
     }}
 
-    List<SalesData> getCharData(){
-      final List<SalesData> charData=[
-        SalesData(1, 135),
-        SalesData(2, 137),
-        SalesData(3, 130),
-        SalesData(4, 125),
-        SalesData(5, 130),
-        SalesData(6, 140),
+    List<HeartData> getCharData(){
+      final List<HeartData> charData=[
+        HeartData(1, 90),
+        HeartData(2, 96),
+        HeartData(3, 100),
+        HeartData(4, 102),
+        HeartData(5, 95),
+        HeartData(6, 95),
         
         
       ];
       return charData; 
     }
   
-class SalesData{
-SalesData(this.day, this.weight);
+class HeartData{
+HeartData(this.day, this.rate);
 final double day; 
-final double weight; 
+final double rate; 
 
 }
 

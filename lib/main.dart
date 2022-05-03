@@ -1,12 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Weight.dart';
+
 import 'package:flutter_application_1/patients.dart';
 
-import 'package:flutter_application_1/selection.dart';
+
 import 'package:flutter_application_1/splash_screen.dart';
-import 'main.dart';
-//import 'package:mongo_dart/mongo_dart.dart';
 
 void main() {
   runApp(MyApp());
