@@ -1,9 +1,16 @@
 import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Weight.dart';
+import 'package:flutter_application_1/bmi.dart';
+import 'package:flutter_application_1/heart.dart';
+import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/oxygen.dart';
 import 'package:flutter_application_1/splash_screen.dart';
-import 'package:flutter_application_1/timeperiod.dart';
+
 import 'dart:async';
-import 'charts.dart';
+
+import 'package:flutter_application_1/temperature.dart';
+
 
 class Selection extends StatefulWidget{
 @override 
@@ -36,7 +43,7 @@ class _SelectionState extends State<Selection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  =>SplashScreen()), 
+                       MaterialPageRoute(builder: (context)  => TemperatureScreen()), 
                      );},
                  )
                ,
@@ -59,7 +66,7 @@ class _SelectionState extends State<Selection> {
                    onPressed: (){
                       Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => SplashScreen()), 
+                       MaterialPageRoute(builder: (context)  => OxygenScreen()), 
                      );}
 
                 ,
@@ -82,7 +89,7 @@ class _SelectionState extends State<Selection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => SplashScreen()), 
+                       MaterialPageRoute(builder: (context)  => GraphScreen()), 
                      );}
 
                 
@@ -103,36 +110,35 @@ class _SelectionState extends State<Selection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => SplashScreen()), 
+                       MaterialPageRoute(builder: (context)  => BMIScreen()), 
                      );}
 
                 ,
 
                 ),
 
-              Divider(
-                  height: 20,
-            thickness: 5,
-            indent: 20,
-            endIndent: 0,
-            color: Colors.white,
-          ),
+     //         Divider(
+    //              height: 20,
+    //        thickness: 5,
+     //       indent: 20,
+     //       endIndent: 0,
+      //      color: Colors.white,
+      //    ),
 
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                   minimumSize: const Size(200, 50),
-                   ),
-                   child: Text('Blood Pressure'),
-                   onPressed: (){
-                     Navigator.push(
-                       context, 
-                       MaterialPageRoute(builder: (context)  => SplashScreen()), 
-                     );}
-
-                ,
-
+        //      ElevatedButton(
+              //  style: ElevatedButton.styleFrom(
+             //      minimumSize: const Size(200, 50),
+              //     ),
+             //      child: Text('Blood Pressure'),
+              //     onPressed: (){
+               //      Navigator.push(
+              //         context, 
+               //        MaterialPageRoute(builder: (context)  => HomeScreen()), 
+           //          );}
+//
+         //
                    
-              ),
+         //     ),
 Divider(
                   height: 20,
             thickness: 5,
@@ -150,7 +156,7 @@ Divider(
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => SplashScreen()), 
+                       MaterialPageRoute(builder: (context)  => HeartScreen()), 
                      );
 
                    },
