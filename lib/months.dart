@@ -1,13 +1,14 @@
 //import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/selection.dart';
 import 'package:intl/intl.dart';
 
-class Time extends StatefulWidget {
+class Month extends StatefulWidget {
   @override
-  _TimeState createState() => _TimeState();
+  _MonthState createState() => _MonthState();
 }
 
-class _TimeState extends State<Time> with SingleTickerProviderStateMixin {
+class _MonthState extends State<Month> with SingleTickerProviderStateMixin {
   bool pickerIsExpanded = false;
   int _pickerYear = DateTime.now().year;
   DateTime _selectedMonth = DateTime(
@@ -141,6 +142,41 @@ class _TimeState extends State<Time> with SingleTickerProviderStateMixin {
               ),
             ),
           ),
+
+          
+               Divider(
+                  height: 20,
+            thickness: 5,
+            indent: 20,
+            endIndent: 0,
+           color: Colors.white,
+          ),
+
+
+ ElevatedButton(
+            
+             onPressed: (){
+                     Navigator.push(
+                       context, 
+                       MaterialPageRoute(builder: (context)  => Selection()), 
+                     );},
+                 
+            
+            child: Text(
+              'Confirm',
+              
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+
+
+
+
+
         ],
       ),
     );

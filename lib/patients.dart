@@ -44,7 +44,7 @@ class _PatientSelectionState extends State<PatientSelection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => Time()), 
+                       MaterialPageRoute(builder: (context)  => Month()), 
                      );},
                  )
                ,
@@ -68,7 +68,7 @@ class _PatientSelectionState extends State<PatientSelection> {
                    onPressed: (){
                       Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => Selection()), 
+                       MaterialPageRoute(builder: (context)  => Month()), 
                      );}
 
                 ,
@@ -92,7 +92,7 @@ class _PatientSelectionState extends State<PatientSelection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => Selection()), 
+                       MaterialPageRoute(builder: (context)  => Month()), 
                      );}
 
                 
@@ -114,7 +114,7 @@ class _PatientSelectionState extends State<PatientSelection> {
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => Selection()), 
+                       MaterialPageRoute(builder: (context)  => Month()), 
                      );}
 
                 ,
@@ -139,7 +139,7 @@ Divider(
                    onPressed: (){
                      Navigator.push(
                        context, 
-                       MaterialPageRoute(builder: (context)  => Selection()), 
+                       MaterialPageRoute(builder: (context)  => Month()), 
                      );
 
                    },
